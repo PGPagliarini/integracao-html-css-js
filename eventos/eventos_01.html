@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
+
+    <body id="exercicio">
+        <main class="coluna">
+            <div id="resultado" onclick="limpar()" style="cursor: pointer;">-</div>
+            <button onclick="sim()">Sim</button>
+            <!-- <button onclick="nao()">Não</button> -->
+            <!-- <button ondblclick="nao()">Não</button> -->
+            <button onmouseenter="nao()">Não</button>
+        </main>
+
+        <script>
+            const div = document.querySelector('#resultado')
+            
+            function limpar() {
+                div.innerHTML = '-'
+            }
+
+            function sim() {
+                div.innerHTML = 'Sim'
+            }
+
+            function nao() {
+                div.innerHTML = 'Não'
+            }
+        </script>
+    </body>
+
+</html>
